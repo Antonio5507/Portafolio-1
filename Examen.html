@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Autos Ferrari</title>
+    <title>Autos Renault</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -63,26 +63,22 @@
     </header>
 
     <h2>Haz clic en el logo para cargar la página</h2>
-    <img style="width: 300px; height: 300px;" src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Renault_logo.jpg" alt="Haz clic aquí" onclick="cargarPagina()">
+    <a href="https://www.renault.com.mx" target="_blank">
+        <img style="width: 300px; height: 300px;" src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Renault_logo.jpg" alt="Haz clic aquí">
+    </a>
     
     <iframe id="iframe-container" src="" frameborder="0"></iframe>
-    
-    <script>
-        function cargarPagina() {
-            document.getElementById('iframe-container').src = 'https://mexicocity.ferraridealers.com/es-ES/';
-        }
-    </script>
 
     <button style="background-color: red; width: 200px; color: white" onclick="irAOtraPagina()">Página oficial Renault</button>
     
     <script>
         function irAOtraPagina() {
-            window.location.href = 'https://www.renault.com.mx';
+            window.location.href = 'https://www.renault.com.mx'; 
         }
     </script>
 
     <div class="contenedor">
-        <img style="width: 350px; height: 250px; border: 6px solid black;" src="https://acnews.blob.core.windows.net/imgnews/medium/NAZ_e18d75853095465fbb3176bc74b099fe.webp?" alt="Ferrari GTS">
+        <img style="width: 350px; height: 250px; border: 6px solid black;" src="https://acnews.blob.core.windows.net/imgnews/medium/NAZ_e18d75853095465fbb3176bc74b099fe.webp?" alt="Renault GTS">
         <img style="width: 350px; height: 250px; border: 5px solid black;" src="https://www.hibridosyelectricos.com/uploads/s1/48/53/54/renault-arkana-2023-portada_17_2000x1126.jpeg">
         <img style="width: 350px; height: 250px; border: 4px solid black;" src="https://i.pinimg.com/736x/c1/2e/fc/c12efc9be206ae2d2fbc8814fe268f0c.jpg">
     </div>
