@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+    <title>Formulario</title>
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: "Helvetica", sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            background-color: #007bff;
+            text-align: center;
+            color: black;
+            padding: 20px;
+            border-radius: 8px 8px 0 0;
+        }
+        div {
+            width: 80%;
+            margin: auto;
+            background-color: #ffffff;
+            color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type=password]:focus {
+            border: 2px solid #007bff;
+            background-color: #eef5ff;
+        }
+        input[type=submit], input[type=reset] {
+            background-color: #007bff;
+            color: black;
+            border: none;
+            padding: 12px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        input[type=submit]:hover, input[type=reset]:hover {
+            background-color: #0056b3;
+        }
+        select {
+            cursor: pointer;
+        }
+        textarea {
+            resize: vertical;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #007bff;
+            color: black;
+            border-radius: 0 0 8px 8px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <header>
+            <h1>Compras Online</h1>
+        </header>
+        <section>
+            <form method="post" action="" enctype="text/plain">
+                <fieldset>
+                    <legend>Información del Cliente</legend> 
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" maxlength="25" placeholder="Nombre" name="nombre" id="nombre" autofocus>
+                    <label for="ap">Apellido paterno:</label>
+                    <input type="text" maxlength="25" placeholder="Apellido paterno" name="ap" id="ap">
+                    <label for="am">Apellido materno:</label>
+                    <input type="text" maxlength="25" placeholder="Apellido materno" name="am" id="am">
+                    <label for="user">Nombre de usuario:</label>
+                    <input type="text" maxlength="25" placeholder="Usuario" name="user" id="user">
+                    <label for="pass">Contraseña:</label>
+                    <input type="password" maxlength="25" placeholder="Password" name="pass" id="pass">
+                </fieldset>
+                <fieldset>
+                    <legend>Datos de Facturación</legend>
+                    <label for="calle">Calle:</label>
+                    <input type="text" maxlength="25" placeholder="Calle" name="calle" id="calle">
+                    <label for="numero">Num:</label>
+                    <input type="text" name="numero" id="numero" placeholder="Num. Exterior" maxlength="20">
+                    <label for="col">Colonia:</label>
+                    <input type="text" name="col" id="col" placeholder="Colonia">
+                    <label for="correo">E-mail:</label>
+                    <input type="text" maxlength="25" placeholder="E-mail" name="correo" id="correo">
+                    <label for="cp">Código Postal:</label>
+                    <input type="number" name="cp" id="cp" placeholder="C.P.">
+                    <label for="web">Sitio web:</label>
+                    <input type="url" name="web" id="web" placeholder="Sitio web">
+                </fieldset>
+                <fieldset>
+                    <legend>Datos del Artículo Adquirido</legend>
+                    <label for="marca">Tipo:</label>
+                    <select name="marca" id="marca">
+                        <option>Vestido</option>
+                        <option>Pantalón</option>
+                        <option>Playera</option>
+                        <option>Camisa</option>
+                        <option>Chamarra</option>
+                    </select>
+                    <label for="producto">Talla:</label>
+                    <input type="checkbox">Chico
+                    <input type="checkbox">Mediano
+                    <input type="checkbox">Grande
+                    <label for="colores">Selecciona el Color:</label>
+                    <input type="color" name="colores" id="colores">
+                    <label for="comentarios">Sugerencias:</label>
+                    <textarea name="comentarios" id="comentarios"></textarea>
+                    <input type="submit" name="enviar" id="enviar" value="Enviar datos">
+                    <input type="reset" name="borrar" id="borrar" value="Borrar datos">
+                </fieldset>
+            </form>
+        </section>
+        <footer>
+            <h3>&copy; Distribuidor autorizado de productos de calidad.</h3>
+        </footer>
+    </div>
+</body>
+</html>
