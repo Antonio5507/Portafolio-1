@@ -1,0 +1,77 @@
+.capa1 {
+    margin-left: 25%;
+    padding: 12px;
+    background-color: #ECF0F1; /* Fondo gris claro */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+ul {
+    list-style-type: none;
+    width: 22%;
+    margin: 0px;
+    padding: 0px;
+    height: 80%;
+    background-color: #2C3E50; /* Azul profundo */
+    position: fixed;
+}
+
+li a {
+    background-color: #2C3E50;
+    color: white;
+    display: block;
+    padding: 16px;
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+    border-bottom: 1px solid #34495E; 
+}
+
+li a:hover {
+    background-color: #F1C40F; /* Dorado */
+    color: #2C3E50;
+    font-weight: bold;
+}
+
+li .activo {
+    background-color: #8E44AD; /* Vino */
+    color: white;
+}
+
+h1 {
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #2C3E50; /* Gris oscuro */
+}
+
+h2 {
+    font-family: "Lora", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #8E44AD; /* Vino */
+}
+
+p {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    text-align: justify;
+    color: #2C3E50; /* Gris oscuro */
+}
+
+.t2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    text-align: justify;
+    font-style: italic;
+    color: #34495E; /* Gris más oscuro */
+}
+
+footer {
+    background-color: #2C3E50; /* Azul profundo */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 20px;
+}
