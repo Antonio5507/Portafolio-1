@@ -1,0 +1,48 @@
+body {
+    background-color: #0d1b2a; /* azul marino oscuro */
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: white; /* para que el texto se vea bien sobre fondo oscuro */
+}
+
+label {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+label:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.imagen {
+    display: inline-block;
+    margin: 10px;
+}
+
+.imagen img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border: 3px solid #007bff;
+    border-radius: 10px;
+    transition: opacity 0.3s ease;
+}
+
+label:hover + .galeria .imagen img {
+    opacity: 0;
+}
+
+
+
+
+
+
+
