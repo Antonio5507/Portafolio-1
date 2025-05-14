@@ -14,20 +14,21 @@
 			display: flex;
 			justify-content: center;
 			align-items: center;
+			background-color: #333; /* Color de fondo */
 		}
 		form {
-			background: #6410e5;
+			background: #ff8c00; /* Fondo del formulario */
 			padding: 30px;
 			border-radius: 10px;
 			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 			text-align: center;
 			width: 50%;
 			margin-left: 23%;
-			border-color: #dac8fa;
+			border-color: #fff3e0; /* Color de borde */
 		}
 		h1 {
 			text-align: center;
-			color: white;
+			color: #fff; /* Color del título */
 			margin-bottom: 20px;
 			font-size: 10vh;
 		}
@@ -35,27 +36,27 @@
 			width: 50%;
 			padding: 10px;
 			margin-bottom: 15px;
-			border: 4px solid white;
+			border: 4px solid #fff; /* Borde del encabezado */
 			border-radius: 5px;
 			margin-left: 24.5%;
-			color: white;
+			color: #fff; /* Color del texto */
 		}
 		label {
 			display: block;
 			margin-bottom: 5px;
 			font-weight: bold;
 			font-size: 5vh;
-			color: #cbaefe;
+			color: #e8c0a7; /* Color de las etiquetas */
 		}
 		input[type="text"] {
 			width: 50%;
 			padding: 10px;
 			margin-bottom: 15px;
-			border: 4px solid #dac8fa;
+			border: 4px solid #ffdb4d; /* Borde de los campos de texto */
 			border-radius: 5px;
 		}
 		input[type="button"] {
-			background-color: #31bbb5;/*color botones*/
+			background-color: #4caf50; /* Fondo de los botones */
 			color: white;
 			border: none;
 			padding: 5px 15px;
@@ -65,9 +66,12 @@
 			transition: background-color 0.3s;
 			font-size: 5vh;
 		}
+		input[type="button"]:hover {
+			background-color: #45a049; /* Efecto hover para los botones */
+		}
 </style>
 
-<body style="background-color: black">
+<body>
 	<h1>Operaciones</h1>
 	<form>
 		<label for="num1">Escribe un numero</label>
