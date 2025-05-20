@@ -1,26 +1,27 @@
-document.addEventListener('DOMContentLoaded', function () {
-  const input = document.getElementById('nueva-tarea');
-  const btnAgregar = document.getElementById('agregar-btn');
-  const lista = document.getElementById('lista-tareas');
+function sumar() {
+  const n1 = parseFloat(document.getElementById("num1").value);
+  const n2 = parseFloat(document.getElementById("num2").value);
+  document.getElementById("r").textContent = n1 + n2;
+}
 
-  btnAgregar.addEventListener('click', function () {
-    const tareaTexto = input.value.trim();
-    if (tareaTexto === '') {
-      alert('Por favor escribe una tarea.');
-      return;
-    }
+function restar() {
+  const n1 = parseFloat(document.getElementById("num1").value);
+  const n2 = parseFloat(document.getElementById("num2").value);
+  document.getElementById("r").textContent = n1 - n2;
+}
 
-    const li = document.createElement('li');
-    li.textContent = tareaTexto;
+function multiplicar() {
+  const n1 = parseFloat(document.getElementById("num1").value);
+  const n2 = parseFloat(document.getElementById("num2").value);
+  document.getElementById("r").textContent = n1 * n2;
+}
 
-    const btnOk = document.createElement('button');
-    btnOk.textContent = 'ok';
-    btnOk.addEventListener('click', function () {
-      lista.removeChild(li);
-    });
-
-    li.appendChild(btnOk);
-    lista.appendChild(li);
-    input.value = '';
-  });
-});
+function dividir() {
+  const n1 = parseFloat(document.getElementById("num1").value);
+  const n2 = parseFloat(document.getElementById("num2").value);
+  if (n2 === 0) {
+    document.getElementById("r").textContent = "Error: División entre cero";
+    return;
+  }
+  document.getElementById("r").textContent = n1 / n2;
+}

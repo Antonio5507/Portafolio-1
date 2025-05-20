@@ -1,48 +1,77 @@
 body {
-    background-color: #0d1b2a; /* azul marino oscuro */
-    text-align: center;
-    font-family: Arial, sans-serif;
-    color: white; /* para que el texto se vea bien sobre fondo oscuro */
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #fdfcfb, #e2d1c3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.contenedor {
+  background: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+
+h1 {
+  color: #4a4a4a;
+  margin-bottom: 20px;
 }
 
 label {
-    background-color: #007bff;
-    color: white;
-    padding: 8px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    display: inline-block;
-    margin-bottom: 20px;
-    font-weight: bold;
-    transition: background-color 0.3s, transform 0.3s;
+  display: block;
+  margin-top: 15px;
+  font-weight: 600;
+  color: #555;
+  text-align: left;
 }
 
-label:hover {
-    background-color: #0056b3;
-    transform: scale(1.05);
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+  background-color: #f9f9f9;
 }
 
-.imagen {
-    display: inline-block;
-    margin: 10px;
+.botones {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
 }
 
-.imagen img {
-    width: 200px;
-    height: 300px;
-    object-fit: cover;
-    border: 3px solid #007bff;
-    border-radius: 10px;
-    transition: opacity 0.3s ease;
+button {
+  padding: 12px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #92b4ec;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-label:hover + .galeria .imagen img {
-    opacity: 0;
+button:hover {
+  background-color: #4a79c9;
 }
 
+h2 {
+  margin-top: 25px;
+  color: #333;
+}
 
-
-
-
-
-
+.resultado {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2c2c2c;
+  margin-top: 10px;
+}
